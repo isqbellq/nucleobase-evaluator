@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>DNA nucleobase evaluator</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>DNA nucleobase evaluator</h1>
+
+	<br>
+
+	<text> DNA sequence: </text><textarea wrap="off" cols="20" rows="1" id="dna-seq">ATGCAGATCTTCGTGAAGACCCTGACCGGCAAGACCATCACCCTGGAGGTGGAGCCCAGCGACACCATCGAGAACGTGAAGGCCAAGATCCAGGACAAGGAGGGCATCCCCCCCGACCAGCAGAGGCTGATCTTCGCCGGCAAGCAGCTGGAGGACGGCAGGACCCTGAGCGACTACAACATCCAGAAGGAGAGCACCCTGCACCTGGTGCTGAGGCTGAGGGGCGGC</textarea>
+
+	<br><br>
+
+	<input type="button" value="GO!" id="start-but" autofocus>
+	<input type="button" value="Reset" id="reset-but" autofocus>
+
+	<br><br>
+
+	<text> Complementary sequence: </text><textarea wrap="off" cols="20" rows="1" id="comp-seq" placeholder="TACGTCTAGAAGCACTTCTGGGACTGGCCGTTCTGGTAGTGGGACCTCCACCTCGGGTCGCTGTGGTAGCTCTTGCACTTCCGGTTCTAGGTCCTGTTCCTCCCGTAGGGGGGGCTGGTCGTCTCCGACTAGAAGCGGCCGTTCGTCGACCTCCTGCCGTCCTGGGACTCGCTGATGTTGTAGGTCTTCCTCTCGTGGGACGTGGACCACGACTCCGACTCCCCGCCGTAGCTC"></textarea>
+
+	<br><br>
+<!-- 
+	<label><b>A</b> colour:</label>
+	<input id="a-colour" type="color" value="#FFFF00">
+	<br><br>
+	<label><b>T</b> colour:</label>
+	<input id="t-colour" type="color" value="#0000FF">
+	<br><br>
+	<label><b>G</b> colour:</label>
+	<input id="g-colour" type="color" value="#00FF00">
+	<br><br>
+	<label><b>C</b> colour:</label>
+	<input id="c-colour" type="color" value="#FF0000">
+
+	<br><br>
+ -->
+	<div class="results">
+		<div class="prevalence">
+			<label># A:</label><div id="a-prev"></div>
+			<br>
+			<label># T:</label><div id="t-prev"></div>
+			<br>
+			<label># G:</label><div id="g-prev"></div>
+			<br>
+			<label># C:</label><div id="c-prev"></div>
+		</div>
+		<br><br>
+		<br><br>
+		<div class="percentage">
+			<label>% A:</label><div id="a-perc"></div>
+			<br>
+			<label>% T:</label><div id="t-perc"></div>
+			<br>
+			<label>% G:</label><div id="g-perc"></div>
+			<br>
+			<label>% C:</label><div id="c-perc"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
