@@ -9,22 +9,20 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>DNA nucleobase evaluator</h1>
+	<h1>DNA nucleobase evaluator </h1>
+	<main>
+		<text> DNA sequence: </text><textarea wrap="off" cols="20" rows="1" id="dna-seq">ATGCAGATCTTCGTGAAGACCCTGACCGGCAAGACCATCACCCTGGAGGTGGAGCCCAGCGACACCATCGAGAACGTGAAGGCCAAGATCCAGGACAAGGAGGGCATCCCCCCCGACCAGCAGAGGCTGATCTTCGCCGGCAAGCAGCTGGAGGACGGCAGGACCCTGAGCGACTACAACATCCAGAAGGAGAGCACCCTGCACCTGGTGCTGAGGCTGAGGGGCGGC</textarea>
 
-	<br>
+		<br><br>
 
-	<text> DNA sequence: </text><textarea wrap="off" cols="20" rows="1" id="dna-seq">ATGCAGATCTTCGTGAAGACCCTGACCGGCAAGACCATCACCCTGGAGGTGGAGCCCAGCGACACCATCGAGAACGTGAAGGCCAAGATCCAGGACAAGGAGGGCATCCCCCCCGACCAGCAGAGGCTGATCTTCGCCGGCAAGCAGCTGGAGGACGGCAGGACCCTGAGCGACTACAACATCCAGAAGGAGAGCACCCTGCACCTGGTGCTGAGGCTGAGGGGCGGC</textarea>
+		<input type="button" value="GO!" id="start-but" autofocus>
+		<input type="button" value="Reset" id="reset-but" autofocus>
 
-	<br><br>
+		<br><br>
 
-	<input type="button" value="GO!" id="start-but" autofocus>
-	<input type="button" value="Reset" id="reset-but" autofocus>
+		<text> Complementary sequence:</text><textarea wrap="off" cols="20" rows="1" id="comp-seq" placeholder="TACGTCTAGAAGCACTTCTGGGACTGGCCGTTCTGGTAGTGGGACCTCCACCTCGGGTCGCTGTGGTAGCTCTTGCACTTCCGGTTCTAGGTCCTGTTCCTCCCGTAGGGGGGGCTGGTCGTCTCCGACTAGAAGCGGCCGTTCGTCGACCTCCTGCCGTCCTGGGACTCGCTGATGTTGTAGGTCTTCCTCTCGTGGGACGTGGACCACGACTCCGACTCCCCGCCGTAGCTC"></textarea>
 
-	<br><br>
-
-	<text> Complementary sequence: </text><textarea wrap="off" cols="20" rows="1" id="comp-seq" placeholder="TACGTCTAGAAGCACTTCTGGGACTGGCCGTTCTGGTAGTGGGACCTCCACCTCGGGTCGCTGTGGTAGCTCTTGCACTTCCGGTTCTAGGTCCTGTTCCTCCCGTAGGGGGGGCTGGTCGTCTCCGACTAGAAGCGGCCGTTCGTCGACCTCCTGCCGTCCTGGGACTCGCTGATGTTGTAGGTCTTCCTCTCGTGGGACGTGGACCACGACTCCGACTCCCCGCCGTAGCTC"></textarea>
-
-	<br><br>
+		<br><br>
 <!-- 
 	<label><b>A</b> colour:</label>
 	<input id="a-colour" type="color" value="#FFFF00">
@@ -39,29 +37,30 @@
 	<input id="c-colour" type="color" value="#FF0000">
 
 	<br><br>
- -->
-	<div class="results">
-		<div class="prevalence">
-			<label># A:</label><div id="a-prev"></div>
-			<br>
-			<label># T:</label><div id="t-prev"></div>
-			<br>
-			<label># G:</label><div id="g-prev"></div>
-			<br>
-			<label># C:</label><div id="c-prev"></div>
-		</div>
-		<br><br>
-		<br><br>
-		<div class="percentage">
-			<label>% A:</label><div id="a-perc"></div>
-			<br>
-			<label>% T:</label><div id="t-perc"></div>
-			<br>
-			<label>% G:</label><div id="g-perc"></div>
-			<br>
-			<label>% C:</label><div id="c-perc"></div>
-		</div>
+-->
+<div class="results">
+	<div class="prevalence">
+		<label># A:</label><div id="a-prev"></div>
+		<br>
+		<label># T:</label><div id="t-prev"></div>
+		<br>
+		<label># G:</label><div id="g-prev"></div>
+		<br>
+		<label># C:</label><div id="c-prev"></div>
 	</div>
+	<br><br>
+	<br><br>
+	<div class="percentage">
+		<label>% A:</label><div id="a-perc"></div>
+		<br>
+		<label>% T:</label><div id="t-perc"></div>
+		<br>
+		<label>% G:</label><div id="g-perc"></div>
+		<br>
+		<label>% C:</label><div id="c-perc"></div>
+	</div>
+</div>
+</main>
 
 	<script type="text/javascript" src="script.js"></script>
 </body>

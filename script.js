@@ -101,8 +101,16 @@ function start() {
 	getNumberOf();
 	getPercOf();
 	getComplementary();
+	window.scrollTo(0,document.body.scrollHeight);
 }
 
 
 document.getElementById("start-but").addEventListener('click', start);
+document.addEventListener('keypress', function (e) {
+		let key = e.which || e.keyCode;
+
+		if (key === 13) {
+			start();
+		}
+	});
 document.getElementById("reset-but").addEventListener('click', reset);
