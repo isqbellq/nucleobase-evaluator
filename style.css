@@ -20,6 +20,9 @@ h1 {
 	-moz-box-shadow:    0px 3px 5px rgba(100, 100, 100, 0.49);
 	box-shadow:         0px 3px 5px rgba(100, 100, 100, 0.49);
 }
+main {
+		padding: 40px;
+}
 textarea {
     background-color: #0b0b0b;
     color: #3c86c3;
@@ -54,7 +57,7 @@ text {
 	display: inline-flex;
 	justify-content: center;
 	align-content: center;
-	padding-bottom: 35px;
+	padding: 35px;
 }
 .prevalence {
 	padding: 0 20px;
