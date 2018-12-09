@@ -7,22 +7,21 @@
 	<title>DNA nucleobase evaluator</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
 	<h1>DNA nucleobase evaluator </h1>
 	<main>
-		<text> DNA sequence: </text><textarea wrap="off" cols="20" rows="1" id="dna-seq" onfocus="this.select()">ATGCAGATCTTCGTGAAGACCCTGACCGGCAAGACCATCACCCTGGAGGTGGAGCCCAGCGACACCATCGAGAACGTGAAGGCCAAGATCCAGGACAAGGAGGGCATCCCCCCCGACCAGCAGAGGCTGATCTTCGCCGGCAAGCAGCTGGAGGACGGCAGGACCCTGAGCGACTACAACATCCAGAAGGAGAGCACCCTGCACCTGGTGCTGAGGCTGAGGGGCGGC</textarea>
-
-		<br><br>
+		<div class="norm">
+			<text><i class="fas fa-dna"></i> DNA sequence:</text><textarea wrap="off" cols="20" rows="1" id="dna-seq" onfocus="this.select()">ATGCAGATCTTCGTGAAGACCCTGACCGGCAAGACCATCACCCTGGAGGTGGAGCCCAGCGACACCATCGAGAACGTGAAGGCCAAGATCCAGGACAAGGAGGGCATCCCCCCCGACCAGCAGAGGCTGATCTTCGCCGGCAAGCAGCTGGAGGACGGCAGGACCCTGAGCGACTACAACATCCAGAAGGAGAGCACCCTGCACCTGGTGCTGAGGCTGAGGGGCGGC</textarea>
+		</div><br>
 
 		<input type="button" value="GO!" id="start-but" autofocus>
-		<input type="button" value="Reset" id="reset-but" autofocus>
+		<input type="button" value="Reset" id="reset-but" autofocus><hr><br>
 
-		<br><br>
-
-		<text> Complementary sequence:</text><textarea wrap="off" cols="20" rows="1" id="comp-seq" placeholder="TACGTCTAGAAGCACTTCTGGGACTGGCCGTTCTGGTAGTGGGACCTCCACCTCGGGTCGCTGTGGTAGCTCTTGCACTTCCGGTTCTAGGTCCTGTTCCTCCCGTAGGGGGGGCTGGTCGTCTCCGACTAGAAGCGGCCGTTCGTCGACCTCCTGCCGTCCTGGGACTCGCTGATGTTGTAGGTCTTCCTCTCGTGGGACGTGGACCACGACTCCGACTCCCCGCCGTAGCTC"></textarea>
-
-		<br><br>
+		<div class="rev">
+			<text><i class="fas fa-yin-yang"></i> Complementary sequence:</text><textarea wrap="off" cols="20" rows="1" id="comp-seq" placeholder="TACGTCTAGAAGCACTTCTGGGACTGGCCGTTCTGGTAGTGGGACCTCCACCTCGGGTCGCTGTGGTAGCTCTTGCACTTCCGGTTCTAGGTCCTGTTCCTCCCGTAGGGGGGGCTGGTCGTCTCCGACTAGAAGCGGCCGTTCGTCGACCTCCTGCCGTCCTGGGACTCGCTGATGTTGTAGGTCTTCCTCTCGTGGGACGTGGACCACGACTCCGACTCCCCGCCGTAGCTC"></textarea>
+		</div><br>
 <!-- 
 	<label><b>A</b> colour:</label>
 	<input id="a-colour" type="color" value="#FFFF00">
