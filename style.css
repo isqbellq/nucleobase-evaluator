@@ -60,6 +60,9 @@ text {
 	-moz-box-shadow: 0px 0px 5px #222;
 	-o-box-shadow: 0px 0px 5px #222;
 }
+#start-but:hover, #reset-but:hover {
+	background-color: #306c9c;
+}
 hr {
 	width: 80%;
 }
