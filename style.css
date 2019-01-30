@@ -62,6 +62,7 @@ text {
 }
 #start-but:hover, #reset-but:hover {
 	background-color: #306c9c;
+	text-shadow:  1px 1px 4px #777;
 }
 hr {
 	width: 80%;
